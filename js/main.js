@@ -1,5 +1,4 @@
-import { tabs } from './modules/tabs.js';
-import { timer } from './modules/timer.js';
+import { tabs, timer } from './modules/index.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   const deadline = '2023-05-30';
