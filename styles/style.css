@@ -228,7 +228,6 @@ body {
 .new__img {
   max-width: 50%;
   width: 350px;
-  height: auto;
   border-radius: 15px;
   transition: filter 0.5s ease-out;
   cursor: pointer;
@@ -266,11 +265,11 @@ body {
 }
 
 .timer__container {
-  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0 15px;
+  margin-top: 15px;
 }
 
 .timer span {
