@@ -86,7 +86,20 @@ export const modals = () => {
   bindModal ({
     triggerSelector: '.header__button',
     modalSelector: '.popup',
+    closeSelector: '.popup__close'});
+  bindModal ({
+    triggerSelector: '.button__choice',
+    modalSelector: '.popup__toads',
+    closeSelector: '.popup__toads_close'});
+  bindModal ({
+    triggerSelector: '.toads__button',
+    modalSelector: '.popup__action',
+    closeSelector: '.popup__action_close',
+    closeClickOverlay: false});
+  bindModal ({
+    triggerSelector: '.action__button',
+    modalSelector: '.popup',
     closeSelector: '.popup__close',
-    closeClickOverlay: 'false'});
-  showModalByTime('.popup', 5000);
+    closeClickOverlay: false});
+  showModalByTime('.popup', 20000);
 };

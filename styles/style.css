@@ -343,7 +343,9 @@ body {
   max-width: 25rem;
 }
 
-.popup__close {
+.popup__close,
+.popup__toads_close,
+.popup__action_close {
   position: absolute;
   top: -4rem;
   right: -3rem;
@@ -355,15 +357,21 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.popup__close:focus {
+.popup__close:focus,
+.popup__toads_close:focus,
+.popup__action_close:focus {
   border: 1px solid #879361;
 }
 
-.popup__close:hover {
+.popup__close:hover,
+.popup__toads_close:hover,
+.popup__action_close:hover {
   font-size: 4.5rem;
 }
 
-.popup__close:active {
+.popup__close:active,
+.popup__toads_close:active,
+.popup__action_close:active {
   font-size: 3.5rem;
 }
 
@@ -410,6 +418,10 @@ body {
   flex-flow: wrap column;
   justify-content: center;
   align-items: center;
+}
+
+.toads__content {
+  top: 12%;
 }
 
 .popup__img {
