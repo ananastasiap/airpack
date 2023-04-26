@@ -310,13 +310,15 @@ body {
 }
 
 .form__title,
-.action__title {
+.action__title,
+.end__title {
   font-size: 20px;
 }
 
 .popup,
 .popup__toads,
-.popup__action {
+.popup__action,
+.popup__end {
   display: none;
   position: fixed;
   top: 0;
@@ -345,7 +347,8 @@ body {
 
 .popup__close,
 .popup__toads_close,
-.popup__action_close {
+.popup__action_close,
+.popup__end_close {
   position: absolute;
   top: -4rem;
   right: -3rem;
@@ -359,19 +362,22 @@ body {
 
 .popup__close:focus,
 .popup__toads_close:focus,
-.popup__action_close:focus {
+.popup__action_close:focus,
+.popup__end_close:focus {
   border: 1px solid #879361;
 }
 
 .popup__close:hover,
 .popup__toads_close:hover,
-.popup__action_close:hover {
+.popup__action_close:hover,
+.popup__end_close:hover {
   font-size: 4.5rem;
 }
 
 .popup__close:active,
 .popup__toads_close:active,
-.popup__action_close:active {
+.popup__action_close:active
+.popup__end_close:active {
   font-size: 3.5rem;
 }
 
@@ -454,7 +460,7 @@ body {
   margin-right: 10px;
 }
 
-.popup__content .radio:checked+.radio-custom::before {
+.toads__content .radio:checked+.radio-custom::before {
   content: "";
   display: block;
   position: absolute;
@@ -470,6 +476,14 @@ body {
 .radio-custom[id="old-wizard"]::before,
 .radio-custom[id="fairy"]::before {
   background: url(../assets/check.png) center center no-repeat;
+}
+
+.toads__content .radio:focus + .radio-custom {
+  outline: 1px solid #879361;
+}
+
+.toads__content .radio:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* popup__action */

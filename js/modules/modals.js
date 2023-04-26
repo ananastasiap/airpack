@@ -98,8 +98,8 @@ export const modals = () => {
     closeClickOverlay: false});
   bindModal ({
     triggerSelector: '.action__button',
-    modalSelector: '.popup',
-    closeSelector: '.popup__close',
+    modalSelector: '.popup__end',
+    closeSelector: '.popup__end_close',
     closeClickOverlay: false});
   showModalByTime('.popup', 20000);
 };

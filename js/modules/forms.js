@@ -1,4 +1,4 @@
-export const forms = () => {
+export const forms = (state) => {
   const forms = document.querySelectorAll('form');
   const inputs = document.querySelectorAll('input');
   const message = {
