@@ -4,7 +4,14 @@ export const modals = () => {
     const modal = document.querySelector(modalSelector);
     const close = document.querySelector(closeSelector);
     const windows = document.querySelectorAll('[data-modal]');
+    const phoneInputs = document.querySelectorAll('input[name="user-phone"]');
     const scroll = calcScroll();
+
+    phoneInputs.forEach(phoneImput => {
+      phoneImput.addEventListener('input', () => {
+        phoneImput.value = phoneImput.value.replace(/\D/, '');
+      });
+    });
 
     triggers.forEach(trigger => {
       trigger.addEventListener('click', (event) => {

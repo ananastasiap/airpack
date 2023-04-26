@@ -1,4 +1,4 @@
-import { tabs, timer, modals } from './modules/index.js';
+import { tabs, timer, modals, forms } from './modules/index.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   const deadline = '2023-05-30';
@@ -10,4 +10,5 @@ window.addEventListener('DOMContentLoaded', () => {
     activeClass: 'active'});
   timer('.timer', deadline);
   modals();
+  forms();
 });
