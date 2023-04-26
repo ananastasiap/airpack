@@ -13,7 +13,7 @@
   * Отправка данных через форму
 * ENG
   * Tabs
-  * Modal windows
+  * Modals
   * Timer
   * Submitting data through a form
 

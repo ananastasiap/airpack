@@ -161,6 +161,10 @@
                 </div>
               </div>
 
+              <div class="button__container">
+                <button class="button button__choice">Выбрать жабку</button>
+              </div>
+
           </div>
         </div>
       </section>
@@ -215,10 +219,11 @@
   </main>
 
   <!-- MODALS -->
-  <div class="popup">
+  <!-- general -->
+  <div class="popup" data-modal>
     <div class="popup__wrapper">
       <div class="popup__content">
-        <button class="popup__close">x</button>
+        <button class="popup__close">&#215;</button>
         <div class="popup__form">
           <form  class="form" action="#">
             <h3 class="title form__title">Запишитесь на жабьи смотрины</h3>
@@ -231,6 +236,83 @@
       </div>
     </div>
   </div>
+  <!-- choice -->
+  <div class="popup__toads" data-modal>
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <button class="popup__close">&#215;</button>
+        <h3 class="title form__title">Выберите жабку</h3>
+        <div class="popup__form toads__form">
+          <div class="toads__wrapper">
+            <img src="./assets/frog_wizard.png" alt="" class="popup__img">
+            <label>
+              <input class="radio sr-only" type="radio" name="radio-check" value="wizard">
+              <span class="radio-custom" id="wizard"></span>
+              <span class="label">молодая</span>
+            </label>
+          </div>
+          <div class="toads__wrapper">
+            <img src="./assets/frog_musician.png" alt="" class="popup__img">
+            <label>
+              <input class="radio sr-only" type="radio" name="radio-check" value="musician">
+              <span class="radio-custom" id="musician"></span>
+              <span class="label">музыкант</span>
+            </label>
+          </div>
+          <div class="toads__wrapper">
+            <img src="./assets/frog_cute.png" alt="" class="popup__img">
+            <label>
+              <input class="radio sr-only" type="radio" name="radio-check" value="hugger">
+              <span class="radio-custom" id="hugger"></span>
+              <span class="label">обниматель</span>
+            </label>
+          </div>
+          <div class="toads__wrapper">
+            <img src="./assets/frog_old_wizard.png" alt="" class="popup__img">
+            <label>
+              <input class="radio sr-only" type="radio" name="radio-check" value="old-wizard">
+              <span class="radio-custom" id="old-wizard"></span>
+              <span class="label">пожилая</span>
+            </label>
+          </div>
+          <div class="toads__wrapper">
+            <img src="./assets/frog_fairy.png" alt="" class="popup__img">
+            <label>
+              <input class="radio sr-only" type="radio" name="radio-check" value="fairy">
+              <span class="radio-custom" id="fairy"></span>
+              <span class="label">фея</span>
+            </label>
+          </div>
+        </div>
+        <button class="button toads__button">Далее</button>
+      </div>
+    </div>
+  </div>
+  <!-- action -->
+  <div class="popup__action" data-modal>
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <button class="popup__close">&#215;</button>
+        <div class="popup__form action__form">
+          <h3 class="title action__title">Выберите для чего нужна жабка и напишите уровень вашей лицензии</h3>
+          <select class="action__select" name="activity" id="activity_type">
+            <option value="home">Для дома</option>
+            <option value="adventure">Для приключений</option>
+            <option value="work">Для работы</option>
+            <option value="rest">Для отдыха</option>
+          </select>
+          <input class="action__license"
+                 type="number"
+                 id="license"
+                 placeholder="10"
+                 min="1" max="10"
+                 required>
+          <button class="button action__button">Далее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- ! ПРИ НАЖАТИИИ НА ЭЛЕМЕНТ ПРОИСХОДИЛ КВАК -->
 
