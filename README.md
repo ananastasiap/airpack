@@ -20,7 +20,7 @@
 ## Для чего? — What is the purpose?
 | RU | ENG |
 | --------- | --------- |
-| Веб-сайт создан для ролевой игры по мультсериалу Хильда (для команды "Гильдия торговцев") | The website was created for a role-playing game based on the animated series Hilda (for the Guild of Merchants team) |
+| Веб-сайт создан для ролевой игры по мультсериалу Хильда (для команды "Гильдия торговцев") [использоваться будет другой сервер] | The website was created for a role-playing game based on the animated series Hilda (for the Guild of Merchants team) [another server will be used] |
 
 ## Предпросмотр — Preview
 ![Preview of Magic Toad Shop](./assets/magic_toad.png)
