@@ -4,23 +4,21 @@ export const timer = (id, deadline) => {
     const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
     const [hours, minutes, seconds] = remainingTime.toLocaleTimeString('ru-RU', { timeStyle: 'medium' }).split(':');
 
-    return {remainingTime, days, hours, minutes, seconds};
-  }
+    return { remainingTime, days, hours, minutes, seconds };
+  };
 
   const setClock = (selector, deadline) => {
     const timer = document.querySelector(selector);
-    const days = timer.querySelector('#days');
-    const hours = timer.querySelector('#hours');
-    const minutes = timer.querySelector('#minutes');
-    const seconds = timer.querySelector('#seconds');
 
     const updateClock = () => {
       const remainingTime = getTimeRemaining(deadline);
 
-      days.textContent = remainingTime.days;
-      hours.textContent = remainingTime.hours;
-      minutes.textContent = remainingTime.minutes;
-      seconds.textContent = remainingTime.seconds;
+      for (const itemOfRemaingTime of Object.keys(remainingTime)) {
+        const partOfTimer = timer.querySelector(`#${itemOfRemaingTime}`);
+        if (partOfTimer) {
+          partOfTimer.textContent = remainingTime[itemOfRemaingTime];
+        }
+      }
 
       if (remainingTime < 0) {
         clearInterval(timeInterval);
