@@ -1,4 +1,4 @@
-import { tabs, timer, modals, forms, changeModalState, images } from './modules/index.js';
+import { tabs, timer, modals, forms, changeModalState, images, soundEffect } from './modules/index.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   const deadline = '2023-05-30';
@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   timer('.timer', deadline);
   modals();
   images();
+  soundEffect();
   forms(modalState);
   changeModalState(modalState);
 });
