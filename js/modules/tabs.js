@@ -23,15 +23,13 @@ export const tabs = ({headerSelector, tabSelector, contentSelector, activeClass,
 
   header.addEventListener('click', (event) => {
     const target =  event.target;
-    if (target && (target.classList.contains(tabSelector.replace(/\./, '')) ||
-                  target.parentNode.classList.contains(tabSelector.replace(/\./, '')))) {
-          tabs.forEach((tab, numOfTab) => {
-            if(target == tab || target.parentNode == tab) {
-              hideTabContent();
-              showTabContent(numOfTab);
-        }
-      });
-    }
+
+    tabs.forEach((tab, numOfTab) => {
+      if(target === tab || target.parentNode === tab) {
+        hideTabContent();
+        showTabContent(numOfTab);
+      }
+    });
   });
 
   tabs.forEach((tab, numOfTab) => {
