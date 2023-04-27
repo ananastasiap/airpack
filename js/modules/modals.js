@@ -7,9 +7,9 @@ export const modals = () => {
     const phoneInputs = document.querySelectorAll('input[name="user-phone"]');
     const scroll = calcScroll();
 
-    phoneInputs.forEach(phoneImput => {
-      phoneImput.addEventListener('input', () => {
-        phoneImput.value = phoneImput.value.replace(/\D/, '');
+    phoneInputs.forEach(phoneInput => {
+      phoneInput.addEventListener('input', () => {
+        phoneInput.value = phoneInput.value.replace(/\D/, '');
       });
     });
 
