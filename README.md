@@ -3,7 +3,7 @@
 ## Магазин волшебных жабок — Magic toad shop
 | RU | ENG |
 | --------- | --------- |
-| Игрушечный магазин с продажей магических жабок. | Toy shop selling magic toads. |
+| Игрушечный магазин с продажей магических жабок. | Toy shop for selling magic toads. |
 
 ## Что входит? — What is included?
 * RU
@@ -23,3 +23,4 @@
 | Веб-сайт создан для ролевой игры по мультсериалу Хильда (для команды "Гильдия торговцев") | The website was created for a role-playing game based on the animated series Hilda (for the Guild of Merchants team) |
 
 ## Предпросмотр — Preview
+![Preview of Magic Toad Shop](./assets/magic_toad.png)
