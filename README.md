@@ -3,7 +3,7 @@
 ## Магазин волшебных жабок — Magic toad shop
 | RU | ENG |
 | --------- | --------- |
-| Игрушечный магазин с продажей магических жабок. Представим сказочный мир, в котором можно приобрести существо, друга, который полностью изменит привычные вещи | Toy shop selling magic toads. Let's imagine a fairy tale world where you can acquire a creature, a friend who will completely transform ordinary things. |
+| Игрушечный магазин с продажей магических жабок. | Toy shop selling magic toads. |
 
 ## Что входит? — What is included?
 * RU
