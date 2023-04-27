@@ -199,19 +199,19 @@ body {
 }
 
 @keyframes faded {
-  10% {
+  5% {
     opacity: 0;
   }
 
-  35% {
+  25% {
     opacity: 0.25;
   }
 
-  60% {
+  55% {
     opacity: 0.5;
   }
 
-  80% {
+  75% {
     opacity: 0.8;
   }
 
