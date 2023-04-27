@@ -4,7 +4,14 @@ export const modals = () => {
     const modal = document.querySelector(modalSelector);
     const close = document.querySelector(closeSelector);
     const windows = document.querySelectorAll('[data-modal]');
+    const phoneInputs = document.querySelectorAll('input[name="user-phone"]');
     const scroll = calcScroll();
+
+    phoneInputs.forEach(phoneImput => {
+      phoneImput.addEventListener('input', () => {
+        phoneImput.value = phoneImput.value.replace(/\D/, '');
+      });
+    });
 
     triggers.forEach(trigger => {
       trigger.addEventListener('click', (event) => {
@@ -79,7 +86,20 @@ export const modals = () => {
   bindModal ({
     triggerSelector: '.header__button',
     modalSelector: '.popup',
-    closeSelector: '.popup__close',
-    closeClickOverlay: 'false'});
-  showModalByTime('.popup', 5000);
+    closeSelector: '.popup__close'});
+  bindModal ({
+    triggerSelector: '.button__choice',
+    modalSelector: '.popup__toads',
+    closeSelector: '.popup__toads_close'});
+  bindModal ({
+    triggerSelector: '.toads__button',
+    modalSelector: '.popup__action',
+    closeSelector: '.popup__action_close',
+    closeClickOverlay: false});
+  bindModal ({
+    triggerSelector: '.action__button',
+    modalSelector: '.popup__end',
+    closeSelector: '.popup__end_close',
+    closeClickOverlay: false});
+  showModalByTime('.popup', 20000);
 };

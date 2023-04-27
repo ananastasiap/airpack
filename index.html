@@ -239,8 +239,8 @@
   <!-- choice -->
   <div class="popup__toads" data-modal>
     <div class="popup__wrapper">
-      <div class="popup__content">
-        <button class="popup__close">&#215;</button>
+      <div class="popup__content toads__content">
+        <button class="popup__toads_close">&#215;</button>
         <h3 class="title form__title">Выберите жабку</h3>
         <div class="popup__form toads__form">
           <div class="toads__wrapper">
@@ -292,7 +292,7 @@
   <div class="popup__action" data-modal>
     <div class="popup__wrapper">
       <div class="popup__content">
-        <button class="popup__close">&#215;</button>
+        <button class="popup__action_close">&#215;</button>
         <div class="popup__form action__form">
           <h3 class="title action__title">Выберите для чего нужна жабка и напишите уровень вашей лицензии</h3>
           <select class="action__select" name="activity" id="activity_type">
@@ -308,6 +308,23 @@
                  min="1" max="10"
                  required>
           <button class="button action__button">Далее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <div class="popup__end" data-modal>
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <button class="popup__end_close">&#215;</button>
+        <div class="popup__form">
+          <form  class="form" action="#" data-calc="end">
+            <h3 class="title end__title">Осталось чуть-чуть!</h3>
+            <input class="form__input" name="user-name" type="text" placeholder="Введите ваше имя" required>
+            <input class="form__input" name="user-phone" type="text" placeholder="Введите ваш телефон" required>
+            <button class="button form__button" name="submit" type="submit">ПРИЗВАТЬ ВОЛШЕБСТВО</button>
+            <p class="form__notice">Ваши данные конфиденциальны</p>
+          </form>
         </div>
       </div>
     </div>

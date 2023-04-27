@@ -1,7 +1,8 @@
-import { tabs, timer, modals } from './modules/index.js';
+import { tabs, timer, modals, forms, changeModalState } from './modules/index.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   const deadline = '2023-05-30';
+  let modalState = {};
 
   tabs({
     headerSelector: '.slider',
@@ -10,4 +11,6 @@ window.addEventListener('DOMContentLoaded', () => {
     activeClass: 'active'});
   timer('.timer', deadline);
   modals();
+  forms(modalState);
+  changeModalState(modalState);
 });
