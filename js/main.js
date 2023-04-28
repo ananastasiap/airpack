@@ -8,7 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
     headerSelector: '.slider',
     tabSelector: '.item__content',
     contentSelector: '.slider__content',
-    activeClass: 'active'});
+    activeClass: 'active',
+  });
   timer('.timer', deadline);
   modals();
   images();
